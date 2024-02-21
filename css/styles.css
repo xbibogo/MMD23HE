@@ -1,0 +1,10 @@
+/* create an imported css stylesheet */
+@import url("styleimp.css");
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3510d8;
+    color: #f7f0f0;
+    margin: 0;
+    padding: 0;
+}

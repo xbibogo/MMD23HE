@@ -9,18 +9,26 @@ const app = Vue.createApp({
       ],
       newItemText: "",
       showForm: false,
+
+      count: 0,
+      goals: ["hjkl"],
+      currentGoal: "",
     };
   },
   methods: {
-    showForm() {
-      this.showForm = true;
+    incrementCount() {
+      this.count++;
+      console.log(this.count);
     },
-    addItem() {
-      this.items.push({ text: this.newItemText, hot: false }); // Add new item with hot set to false
-      this.showForm = false;
-      this.newItemText = "";
+    addGoal() {
+      console.log(this.currentGoal);
+      if (this.currentGoal != "") {
+        this.goals.push(this.currentGoal);
+        this.currentGoal = "";
+        console.log(this.goals);
+      }
     },
   },
 });
 
-app.mount("#page");
+app.mount("#app");

@@ -1,0 +1,21 @@
+[
+    {
+      "navn": "Lars Jensen",
+      "alder": 30,
+      "adresse": "Hovedgaden 123, 1000 København",
+      "telefon": "12345678"
+    },
+    {
+      "navn": "Mette Andersen",
+      "alder": 25,
+      "adresse": "Bakkevej 45, 2000 Frederiksberg",
+      "telefon": "87654321"
+    },
+    {
+      "navn": "Søren Nielsen",
+      "alder": 35,
+      "adresse": "Skovvejen 67, 2500 Valby",
+      "telefon": "11223344"
+    }
+  ]
+  

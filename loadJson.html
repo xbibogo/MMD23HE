@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persondata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #output {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .person-container {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left; /* Juster teksten til venstre */
+        }
+
+        .person-container strong {
+            color: #333;
+            display: inline-block; /* Vis stærk (strong) som en blok for at placere i en linje */
+            width: 80px; /* Juster bredden efter behov */
+        }
+
+         
+ 
+    </style>
+    </style>
+</head>
+<body>
+
+    <h1>Persondata</h1>
+
+    <div id="output"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Indlæs JSON-data
+            fetch('personer.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Vis data i HTML
+                    const outputDiv = document.getElementById('output');
+                    data.forEach(person => {
+                        outputDiv.innerHTML += `
+                            <div>
+                                <strong>Navn:</strong> ${person.navn}<br>
+                                <strong>Alder:</strong> ${person.alder}<br>
+                                <strong>Adresse:</strong> ${person.adresse}<br>
+                                <strong>Telefon:</strong> ${person.telefon}<br>
+                                <br>
+                            </div>
+                        `;
+                    });
+                })
+                .catch(error => console.error('Fejl ved indlæsning af JSON:', error));
+        });
+    </script>
+
+</body>
+</html>

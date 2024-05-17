@@ -1,0 +1,31 @@
+/*
+ Theme Name:   Astra Child
+ Theme URI:    http://github.com/jcasabona/astra-child
+ Description:  A child theme for Astra
+ Author:       Joe Casabona
+ Author URI:   https://casabona.org
+ Template:     astra
+ Version:      1.0.0
+*/
+body {
+
+	color: rgb(44, 149, 123);
+}
+
+.entry-title a {
+	color: rgb(253, 145, 4);
+}
+
+.entry-meta {
+	color: rgb(253, 145, 4);
+}
+
+.entry-meta * {
+	line-height: 1.45;
+	color: aquamarine;
+	font-weight: 600;
+}
+
+a {
+	color: aqua;
+}

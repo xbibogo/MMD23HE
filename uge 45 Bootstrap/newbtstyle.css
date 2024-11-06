@@ -1,0 +1,78 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap');
+
+/* CSS Variables for Colors and Fonts */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-light-grey: #f8f9fa;
+  --color-dark-grey: #333333;
+  --color-muted-grey: #e0e0e0;
+  --color-accent-orange: #fe5e24;
+  
+  /* Fonts */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+}
+
+/* Apply Fonts and Colors */
+body {
+  font-family: var(--font-body);
+  color: var(--color-dark-grey);
+  background-color: var(--color-white);
+}
+
+h1
+.navbar, footer {
+  background-color: var(--color-dark-grey);
+}
+
+.navbar-brand, .nav-link, footer p {
+  color: var(--color-white) !important;
+  font-family: var(--font-heading);
+}
+
+.section-title {
+  color: var(--color-dark-grey); /* Updated to dark grey */
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.jumbotron {
+  background-color: var(--color-light-grey);
+  color: var(--color-dark-grey);
+}
+
+.list-group-item, .blockquote, .form-group label {
+  font-family: var(--font-body);
+  color: var(--color-dark-grey);
+}
+
+blockquote {
+  border-left: 3px solid var(--color-accent-orange);
+  padding-left: 15px;
+  color: var(--color-dark-grey);
+  background-color: var(--color-light-grey);
+}
+
+.btn-primary {
+  background-color: var(--color-accent-orange);
+  border-color: var(--color-accent-orange);
+}
+
+.btn-primary:hover {
+  background-color: #d24c1f;
+  border-color: #d24c1f;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /* Your styles here */
+    color: var(--color-accent-orange); /* Example style */
+    font-family: Arial, sans-serif; /* Example style */
+}
+
+.section-title {
+    margin-top: 30px;
+    font-size: 2em;
+    color: var(--color-accent-orange);;
+  }
